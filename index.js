@@ -65,3 +65,10 @@ navContact.addEventListener('click', () => {
     addNewSection.classList.remove('display-section');
     contactSection.classList.add('display-section');
 });
+
+const dateTime = document.querySelector('#date-text');
+const clock = () => {
+    const currentDateTime = DateTime.now().toLocaleString(DateTime.DATETIME_FULL_WITH_SECONDS);
+    dateTime.innerHTML = currentDateTime;
+};
+setInterval(clock, 1000);
