@@ -218,7 +218,7 @@ footer p a {
 
 @media screen and(max-width: 480px) {
   header {
-      width: auto;
+    width: auto;
     padding: 10px 10px;
     z-index: 3;
     background-color: white;
