@@ -159,7 +159,14 @@ footer {
     background-color: white;
     text-align: center;
 }
+footer p{
+    display: inline-block;
+    padding-right: 70px;
+}
 
+footer p a{
+    text-decoration: none;
+}
 .display-section {
     display: block;
     margin-top: 60px;
@@ -169,5 +176,127 @@ footer {
 .display-author {
     text-transform: capitalize;
 }
+@media screen and(max-width: 750px) {
+    header {
+        padding: 5px 50px;
+    }
+
+    .book-container {
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+
+    .book-info {
+        flex-wrap: wrap;
+        row-gap: 0;
+    }
+
+    .book-info p {
+        margin: 10px 0 0;
+    }
+
+    button {
+        font-size: 13px;
+        margin: 10px 0;
+        padding: 0 5px;
+        align-self: flex-end;
+    }
+
+    .add-new-book {
+        width: 70%;
+    }
+
+    form {
+        width: 100%;
+    }
+}
+
+@media screen and(max-width: 520px) {
+    header {
+        padding: 5px 20px;
+        z-index: 3;
+        background-color: white;
+    }
+
+    nav {
+        width: 100vw;
+        position: absolute;
+        top: 48px;
+        left: 0;
+        transform: translateX(-500px);
+        background-color: white;
+        display: flex;
+        justify-content: center;
+        transition: transform 0.3s ease-in-out;
+    }
+
+    #nav-links {
+        padding-left: 0;
+    }
+
+    nav.active {
+        transform: translateX(0);
+        z-index: 1;
+    }
+
+    .hamburger {
+        display: block;
+        cursor: pointer;
+        width: fit-content;
+    }
+
+    .bar {
+        display: block;
+        width: 28px;
+        height: 4px;
+        margin: 5px auto;
+        -webkit-transition: all 0.3s ease-in-out;
+        transition: all 0.3s ease-in-out;
+        background-color: #000;
+    }
+
+    .hamburger.active .bar:nth-child(2) {
+        opacity: 0;
+    }
+
+    .hamburger.active .bar:nth-child(1) {
+        transform: translateY(9px) rotate(45deg);
+    }
+
+    .hamburger.active .bar:nth-child(3) {
+        transform: translateY(-9px) rotate(-45deg);
+    }
+
+    .date-time {
+        top: 35px;
+        right: 10px;
+    }
+
+    h2 {
+        font-size: 25px;
+    }
+
+    .books-list {
+        width: 90%;
+    }
+
+    .book-info {
+        font-size: 15px;
+    }
+
+    .add-new-book {
+        width: 80%;
+    }
+
+    .contact-info {
+        font-size: 15px;
+    }
+
+    .contact-info p {
+        text-align: center;
+        padding: 0 15px;
+    }
+}
+
 
 
