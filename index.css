@@ -33,3 +33,18 @@ header {
     display: none;
 }
 
+#nav-links {
+    display: flex;
+    list-style-type: none;
+    font-size: 16px;
+    gap: 40px;
+}
+
+#nav-links li {
+    cursor: pointer;
+}
+
+#nav-links li.active {
+    border-bottom: 2px solid #000;
+}
+
