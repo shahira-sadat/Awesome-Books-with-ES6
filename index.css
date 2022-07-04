@@ -108,4 +108,40 @@ button {
     display: none;
 }
 
+form {
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+    gap: 15px;
+}
+
+input {
+    font-size: 16px;
+    padding: 8px;
+    border: 2px solid #000;
+}
+
+#add-book {
+    width: 53px;
+    box-sizing: border-box;
+    align-self: flex-end;
+}
+
+#form-validation {
+    display: none;
+    background-color: #008000;
+    padding: 8px 15px;
+    color: white;
+    border-radius: 8px;
+    font-size: 15px;
+    text-align: center;
+    font-weight: 400;
+    transition: opacity 0.2s ease-in-out;
+}
+
+#form-validation.active {
+    display: block;
+    margin-top: 10px;
+}
+
 
