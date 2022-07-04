@@ -12,23 +12,23 @@ const input = document.querySelector('input');
 const validationMessage = document.querySelector('#form-validation');
 
 const clearValidationMessage = () => {
-    validationMessage.innerHTML = '';
-    validationMessage.classList.remove('active');
+  validationMessage.innerHTML = '';
+  validationMessage.classList.remove('active');
 };
 
 addBook.addEventListener('click', (e) => {
-    e.preventDefault();
-    if (titleInput.value && authorInput.value) {
-        booksCollection.addBook(titleInput.value, authorInput.value);
-        validationMessage.innerHTML = 'Your book has been added successfully';
-        validationMessage.classList.add('active');
-        titleInput.value = '';
-        authorInput.value = '';
-    }
+  e.preventDefault();
+  if (titleInput.value && authorInput.value) {
+    booksCollection.addBook(titleInput.value, authorInput.value);
+    validationMessage.innerHTML = 'Your book has been added successfully';
+    validationMessage.classList.add('active');
+    titleInput.value = '';
+    authorInput.value = '';
+  }
 });
 
 input.addEventListener('input', () => {
-    clearValidationMessage();
+  clearValidationMessage();
 });
 
 const navList = document.querySelector('#nav-list');
@@ -40,35 +40,35 @@ const addNewSection = document.querySelector('.add-new-book');
 const contactSection = document.querySelector('.contact-info');
 
 navList.addEventListener('click', () => {
-    navList.classList.add('active');
-    navAddNew.classList.remove('active');
-    navContact.classList.remove('active');
-    bookListSection.classList.add('display-section');
-    addNewSection.classList.remove('display-section');
-    contactSection.classList.remove('display-section');
+  navList.classList.add('active');
+  navAddNew.classList.remove('active');
+  navContact.classList.remove('active');
+  bookListSection.classList.add('display-section');
+  addNewSection.classList.remove('display-section');
+  contactSection.classList.remove('display-section');
 });
 
 navAddNew.addEventListener('click', () => {
-    navList.classList.remove('active');
-    navAddNew.classList.add('active');
-    navContact.classList.remove('active');
-    bookListSection.classList.remove('display-section');
-    addNewSection.classList.add('display-section');
-    contactSection.classList.remove('display-section');
+  navList.classList.remove('active');
+  navAddNew.classList.add('active');
+  navContact.classList.remove('active');
+  bookListSection.classList.remove('display-section');
+  addNewSection.classList.add('display-section');
+  contactSection.classList.remove('display-section');
 });
 
 navContact.addEventListener('click', () => {
-    navList.classList.remove('active');
-    navAddNew.classList.remove('active');
-    navContact.classList.add('active');
-    bookListSection.classList.remove('display-section');
-    addNewSection.classList.remove('display-section');
-    contactSection.classList.add('display-section');
+  navList.classList.remove('active');
+  navAddNew.classList.remove('active');
+  navContact.classList.add('active');
+  bookListSection.classList.remove('display-section');
+  addNewSection.classList.remove('display-section');
+  contactSection.classList.add('display-section');
 });
 
 const dateTime = document.querySelector('#date-text');
 const clock = () => {
-    const currentDateTime = DateTime.now().toLocaleString(DateTime.DATETIME_FULL_WITH_SECONDS);
-    dateTime.innerHTML = currentDateTime;
+  const currentDateTime = DateTime.now().toLocaleString(DateTime.DATETIME_FULL_WITH_SECONDS);
+  dateTime.innerHTML = currentDateTime;
 };
 setInterval(clock, 1000);
