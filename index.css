@@ -144,4 +144,30 @@ input {
     margin-top: 10px;
 }
 
+.contact-info {
+    display: none;
+    margin-bottom: 100px;
+    font-size: 18px;
+}
+
+footer {
+    width: 100vw;
+    position: fixed;
+    bottom: 0;
+    font-size: 16px;
+    border: 3px solid #000;
+    background-color: white;
+    text-align: center;
+}
+
+.display-section {
+    display: block;
+    margin-top: 60px;
+}
+
+.display-title,
+.display-author {
+    text-transform: capitalize;
+}
+
 
