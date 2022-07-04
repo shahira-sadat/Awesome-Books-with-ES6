@@ -31,10 +31,6 @@ header {
   cursor: pointer;
 }
 
-.hamburger {
-  display: none;
-}
-
 #nav-links {
   display: flex;
   list-style-type: none;
@@ -260,19 +256,6 @@ footer p a {
     transition: all 0.3s ease-in-out;
     background-color: #000;
   }
-
-  .hamburger.active .bar:nth-child(2) {
-    opacity: 0;
-  }
-
-  .hamburger.active .bar:nth-child(1) {
-    transform: translateY(9px) rotate(45deg);
-  }
-
-  .hamburger.active .bar:nth-child(3) {
-    transform: translateY(-9px) rotate(-45deg);
-  }
-
   .date-time {
     top: 35px;
     right: 10px;
