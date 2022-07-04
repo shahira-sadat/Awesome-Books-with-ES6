@@ -26,8 +26,8 @@ export default class BookCollection {
     const booksDiv = document.querySelector('.books');
     booksDiv.innerHTML = '';
     this.booksArray.forEach((book) => {
-      booksDiv.innerHTML +=
-       `<div class="book-container">
+      booksDiv.innerHTML
+      += `<div class="book-container">
        <div class="book-info">
        <p class="display-title">" ${book.title} "</p>
        <p>by</p>
