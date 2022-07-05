@@ -1,14 +1,14 @@
 # Project Name
-Put here the name of project
+Awesome Books
 
-> A description of the project here
+> A basic website that allows users to add/remove books from a list.
 
-![screenshot]here
+
 
 
 ## Live Demo
 
-[Live Demo Link](link here)
+[Live Demo Link](https://shahira-sadat.github.io/Awesome-Books-with-ES6/)
 
 ## Built With
 - html
@@ -41,7 +41,7 @@ open index.html in your local browser
 - Linkedin: [Shahira Sadat](https://www.linkedin.com/in/shahira-sadat-49b402199)
 - Gmail: shahira.sadat1@gmail.com
 
-## 🤝 Contributing
+
 Contributions, issues, and feature requests are welcome!
 
 ## Show your support
