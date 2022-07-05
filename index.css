@@ -142,6 +142,24 @@ input {
   margin-top: 10px;
 }
 
+#warningtext {
+  display: none;
+  background-color: #ca320c;
+  padding: 8px 15px;
+  color: white;
+  border-radius: 8px;
+  font-size: 15px;
+  text-align: center;
+  font-weight: 400;
+  transition: opacity 0.1s ease-in-out;
+  transition-duration: 1ms;
+}
+
+#warningtext.active1 {
+  display: block;
+  margin-top: 10px;
+}
+
 .contact-info {
   display: none;
   margin-bottom: 100px;

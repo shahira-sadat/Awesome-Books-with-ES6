@@ -10,10 +10,16 @@ const authorInput = document.querySelector('#author');
 const addBook = document.querySelector('#add-book');
 const input = document.querySelector('input');
 const validationMessage = document.querySelector('#form-validation');
+const warningText = document.querySelector('#warningtext');
 
 const clearValidationMessage = () => {
   validationMessage.innerHTML = '';
   validationMessage.classList.remove('active');
+};
+
+const clearWarningMessage = () => {
+  warningText.innerHTML = '';
+  warningText.classList.remove('active1');
 };
 
 addBook.addEventListener('click', (e) => {
@@ -24,6 +30,9 @@ addBook.addEventListener('click', (e) => {
     validationMessage.classList.add('active');
     titleInput.value = '';
     authorInput.value = '';
+  } else {
+    warningText.innerHTML = 'Fields are empty, please add input';
+    warningText.classList.add('active1');
   }
 });
 
@@ -31,6 +40,9 @@ input.addEventListener('input', () => {
   clearValidationMessage();
 });
 
+input.addEventListener('input', () => {
+  clearWarningMessage();
+});
 const navList = document.querySelector('#nav-list');
 const navAddNew = document.querySelector('#nav-add-new');
 const navContact = document.querySelector('#nav-contact');
